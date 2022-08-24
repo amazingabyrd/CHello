@@ -1,0 +1,7 @@
+[
+  {
+    "directory": "C:\\GitHubRepo\\CHello\\CHelloWorld\\CHelloWorld",
+    "command": "\"C:\\Windows\\system32\\CL.exe\" \/c \/ZI \/JMC \/nologo \/W3 \/WX- \/diagnostics:column \/Od \/D _CRT_SECURE_NO_WARNINGS \/EHsc \/RTC1 \/MDd \/GS \/fp:precise \/std:c++17 \/permissive- \/Fo\"x64\\Debug\\\\\" \/Gd \/TP   \"C:\\GitHubRepo\\CHello\\CHelloWorld\\CHelloWorld\\CHelloWorld.cpp\"",
+    "file": "C:\\GitHubRepo\\CHello\\CHelloWorld\\CHelloWorld\\CHelloWorld.cpp"
+  }
+]
