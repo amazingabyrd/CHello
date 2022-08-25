@@ -1,3 +1,2 @@
-﻿  CHelloWorld.cpp
-CLANGTIDY : warning : argument unused during compilation: '/ZI' [clang-diagnostic-unused-command-line-argument]
+﻿CLANGTIDY : warning : argument unused during compilation: '/ZI' [clang-diagnostic-unused-command-line-argument]
   CHelloWorld.vcxproj -> C:\GitHubRepo\CHello\CHelloWorld\x64\Debug\CHelloWorld.exe
