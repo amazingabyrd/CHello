@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CHelloWorld.cpp">
+    <ClCompile Include="..\..\ByrdAustinHW03.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
