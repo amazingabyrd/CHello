@@ -1,25 +1,16 @@
 ﻿  ByrdAustinHW03.c
-C:\GitHubRepo\CHello\ByrdAustinHW03.c(45,11): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\GitHubRepo\CHello\ByrdAustinHW03.c(57,11): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
-C:\GitHubRepo\CHello\ByrdAustinHW03.c(58,12): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
-C:\GitHubRepo\CHello\ByrdAustinHW03.c(69,11): warning C4244: '+=': conversion from 'float' to 'unsigned int', possible loss of data
-C:\GitHubRepo\CHello\ByrdAustinHW03.c(74,15): warning C4244: 'function': conversion from 'unsigned int' to 'float', possible loss of data
-C:\GitHubRepo\CHello\ByrdAustinHW03.c(106,10): warning C4244: 'return': conversion from 'const int' to 'float', possible loss of data
-C:\GitHubRepo\CHello\ByrdAustinHW03.c(110,10): warning C4244: 'return': conversion from 'const int' to 'float', possible loss of data
+C:\GitHubRepo\CHello\ByrdAustinHW03.c(43,11): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\GitHubRepo\CHello\ByrdAustinHW03.c(56,11): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+C:\GitHubRepo\CHello\ByrdAustinHW03.c(57,12): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\GitHubRepo\CHello\ByrdAustinHW03.c(67,11): warning C4244: '+=': conversion from 'float' to 'unsigned int', possible loss of data
+C:\GitHubRepo\CHello\ByrdAustinHW03.c(76,15): warning C4244: 'function': conversion from 'unsigned int' to 'float', possible loss of data
+C:\GitHubRepo\CHello\ByrdAustinHW03.c(107,10): warning C4244: 'return': conversion from 'const int' to 'float', possible loss of data
+C:\GitHubRepo\CHello\ByrdAustinHW03.c(111,10): warning C4244: 'return': conversion from 'const int' to 'float', possible loss of data
 CLANGTIDY : warning : argument unused during compilation: '/ZI' [clang-diagnostic-unused-command-line-argument]
-C:\GitHubRepo\CHello\ByrdAustinHW03.c(32,6): warning G183B9D1E: variable 'scannVar' set but not used [clang-diagnostic-unused-but-set-variable]
-          int scannVar;
-              ^
-C:\GitHubRepo\CHello\ByrdAustinHW03.c(43,3): warning G36456E0F: Value stored to 'scannVar' is never read [clang-analyzer-deadcode.DeadStores]
-                  scannVar = scanf("%10f", &inputtemp);
-                  ^          ~~~~~~~~~~~~~~~~~~~~~~~~~
-  C:\GitHubRepo\CHello\ByrdAustinHW03.c:43:3: note: Value stored to 'scannVar' is never read
-                  scannVar = scanf("%10f", &inputtemp);
-                  ^          ~~~~~~~~~~~~~~~~~~~~~~~~~
-C:\GitHubRepo\CHello\ByrdAustinHW03.c(43,14): warning G2652FB77: Call to function 'scanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'scanf_s' in case of C11 [clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling]
-                  scannVar = scanf("%10f", &inputtemp);
-                             ^~~~~
-  C:\GitHubRepo\CHello\ByrdAustinHW03.c:43:14: note: Call to function 'scanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'scanf_s' in case of C11
-                  scannVar = scanf("%10f", &inputtemp);
-                             ^~~~~
+C:\GitHubRepo\CHello\ByrdAustinHW03.c(41,3): warning G2652FB77: Call to function 'scanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'scanf_s' in case of C11 [clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling]
+                  scanf("%10f", &inputtemp);
+                  ^~~~~
+  C:\GitHubRepo\CHello\ByrdAustinHW03.c:41:3: note: Call to function 'scanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'scanf_s' in case of C11
+                  scanf("%10f", &inputtemp);
+                  ^~~~~
   CHelloWorld.vcxproj -> C:\GitHubRepo\CHello\CHelloWorld\x64\Debug\CHelloWorld.exe
