@@ -28,6 +28,7 @@ int main()
 	//Declare input variable 
 	float inputtemp;
 	float input;
+	int scanVar;
 	int sum = 0; //totalprice
 	int counter = 1; //boards rented
 	unsigned int time = 1;
@@ -38,32 +39,32 @@ int main()
 		printf("%s", "Enter the number of hours the board was rented or enter -1 to quit.\n");
 
 		//recieve input
-		scanf("%10f", &inputtemp);
+		scanVar = scanf("%10f", &inputtemp);
 		//check invalid character input
 		while ((getchar()) != '\n'); 
-		//round input time to next highest hour
-		input = ceil(inputtemp);
-		
+		if (scanVar = 1)
+		{			//round input time to next highest hour
+			input = ceil(inputtemp);
 
-		// Check input's validity
-		//return error message if input is invalid
-		if (checkValidity(input) == 0 ) 
-		{
-			printf("%s", "\aError: Enter the time rented. (From 0.1 to 10 hours)\n");
-			continue;// I know, I know you said not to, but this fixes problems; if you feel like it isn't please chastise me in class by explaining very clearly what to do instead
-		}
-		//continue program if input is valid and not -1
-		else if (checkValidity(input) == 1)
-		{
-			sum += price(input);
-			display(price(input), inputtemp, counter);
-		}
-		//if the sentinel value (-1) is entered
-		else
-		{
+			// Check input's validity
+			//return error message if input is invalid
+			if (checkValidity(input) == 0)
+			{
+				printf("%s", "\aError: Enter the time rented. (From 0.1 to 10 hours)\n");
+				continue;// I know, I know you said not to, but this fixes problems; if you feel like it isn't please chastise me in class by explaining very clearly what to do instead
+			}
+			//continue program if input is valid and not -1
+			else if (checkValidity(input) == 1)
+			{
+				sum += price(input);
+				display(price(input), inputtemp, counter);
+			}
+			//if the sentinel value (-1) is entered
+			else
+			{
 
+			}
 		}
-
 		//increment boards and time rented
 		counter++;
 		time += input;
