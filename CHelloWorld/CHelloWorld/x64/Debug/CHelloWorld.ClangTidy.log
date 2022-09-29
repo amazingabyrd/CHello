@@ -1,30 +1,7 @@
 warning: argument unused during compilation: '/ZI' [clang-diagnostic-unused-command-line-argument]
-C:\GitHubRepo\CHello\ByrdAustinHW03.c:42:3: warning: Value stored to 'scanVar' is never read [clang-analyzer-deadcode.DeadStores]
-                scanVar = scanf("%10f", &inputtemp);
-                ^         ~~~~~~~~~~~~~~~~~~~~~~~~~
-C:\GitHubRepo\CHello\ByrdAustinHW03.c:42:3: note: Value stored to 'scanVar' is never read
-                scanVar = scanf("%10f", &inputtemp);
-                ^         ~~~~~~~~~~~~~~~~~~~~~~~~~
-C:\GitHubRepo\CHello\ByrdAustinHW03.c:42:13: warning: Call to function 'scanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'scanf_s' in case of C11 [clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling]
-                scanVar = scanf("%10f", &inputtemp);
-                          ^~~~~
-C:\GitHubRepo\CHello\ByrdAustinHW03.c:42:13: note: Call to function 'scanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'scanf_s' in case of C11
-                scanVar = scanf("%10f", &inputtemp);
-                          ^~~~~
-C:\GitHubRepo\CHello\ByrdAustinHW03.c:45:7: warning: Although the value stored to 'scanVar' is used in the enclosing expression, the value is never actually read from 'scanVar' [clang-analyzer-deadcode.DeadStores]
-                if (scanVar = 1)
-                    ^         ~
-C:\GitHubRepo\CHello\ByrdAustinHW03.c:45:7: note: Although the value stored to 'scanVar' is used in the enclosing expression, the value is never actually read from 'scanVar'
-                if (scanVar = 1)
-                    ^         ~
-C:\GitHubRepo\CHello\ByrdAustinHW03.c:45:15: warning: using the result of an assignment as a condition without parentheses [clang-diagnostic-parentheses]
-                if (scanVar = 1)
-                    ~~~~~~~~^~~
-C:\GitHubRepo\CHello\ByrdAustinHW03.c:45:15: note: place parentheses around the assignment to silence this warning
-                if (scanVar = 1)
-                            ^
-                    (          )
-C:\GitHubRepo\CHello\ByrdAustinHW03.c:45:15: note: use '==' to turn this assignment into an equality comparison
-                if (scanVar = 1)
-                            ^
-                            ==
+C:\GitHubRepo\CSC2060Code\Csc2060ClassCode\CS2060-Class-Code-main\examples\ByrdAustinHW04.c:28:6: warning: unused variable 'grades' [clang-diagnostic-unused-variable]
+        int grades[STUDENTS][GRADE_CATEGORIES] = {0};
+            ^
+C:\GitHubRepo\CSC2060Code\Csc2060ClassCode\CS2060-Class-Code-main\examples\ByrdAustinHW04.c:29:6: warning: unused variable 'finalGrade' [clang-diagnostic-unused-variable]
+        int finalGrade[GRADE_CATEGORIES] = {0};
+            ^

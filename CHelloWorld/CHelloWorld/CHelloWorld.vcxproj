@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\ByrdAustinHW03.c" />
+    <ClCompile Include="..\..\..\CSC2060Code\Csc2060ClassCode\CS2060-Class-Code-main\examples\ByrdAustinHW04.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
