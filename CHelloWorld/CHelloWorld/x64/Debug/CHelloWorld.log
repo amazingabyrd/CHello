@@ -1,9 +1,11 @@
 ﻿  ByrdAustinHW04.c
+C:\GitHubRepo\CSC2060Code\Csc2060ClassCode\CS2060-Class-Code-main\examples\ByrdAustinHW04.c(153,34): warning C4244: 'function': conversion from 'double' to 'int', possible loss of data
+C:\GitHubRepo\CSC2060Code\Csc2060ClassCode\CS2060-Class-Code-main\examples\ByrdAustinHW04.c(193,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
 CLANGTIDY : warning : argument unused during compilation: '/ZI' [clang-diagnostic-unused-command-line-argument]
-C:\GitHubRepo\CSC2060Code\Csc2060ClassCode\CS2060-Class-Code-main\examples\ByrdAustinHW04.c(28,6): warning G41AE70B8: unused variable 'grades' [clang-diagnostic-unused-variable]
-          int grades[STUDENTS][GRADE_CATEGORIES] = {0};
-              ^
-C:\GitHubRepo\CSC2060Code\Csc2060ClassCode\CS2060-Class-Code-main\examples\ByrdAustinHW04.c(29,6): warning G41AE70B8: unused variable 'finalGrade' [clang-diagnostic-unused-variable]
-          int finalGrade[GRADE_CATEGORIES] = {0};
-              ^
+C:\GitHubRepo\CSC2060Code\Csc2060ClassCode\CS2060-Class-Code-main\examples\ByrdAustinHW04.c(83,14): warning G2652FB77: Call to function 'scanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'scanf_s' in case of C11 [clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling]
+                          scanVar = scanf("%d", &tempInput);
+                                    ^~~~~
+  C:\GitHubRepo\CSC2060Code\Csc2060ClassCode\CS2060-Class-Code-main\examples\ByrdAustinHW04.c:83:14: note: Call to function 'scanf' is insecure as it does not provide security checks introduced in the C11 standard. Replace with analogous functions that support length arguments or provides boundary checks such as 'scanf_s' in case of C11
+                          scanVar = scanf("%d", &tempInput);
+                                    ^~~~~
   CHelloWorld.vcxproj -> C:\GitHubRepo\CHello\CHelloWorld\x64\Debug\CHelloWorld.exe
