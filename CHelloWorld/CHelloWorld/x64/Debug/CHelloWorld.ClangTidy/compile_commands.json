@@ -1,7 +1,7 @@
 [
   {
     "directory": "C:\\GitHubRepo\\CHello\\CHelloWorld\\CHelloWorld",
-    "command": "\"C:\\Windows\\system32\\CL.exe\" \/c \/ZI \/JMC \/nologo \/W3 \/WX- \/diagnostics:column \/Od \/D _CRT_SECURE_NO_WARNINGS \/EHsc \/RTC1 \/MDd \/GS \/fp:precise \/permissive- \/Fo\"x64\\Debug\\\\\" \/Gd \/TC   \"C:\\GitHubRepo\\CSC2060Code\\Csc2060ClassCode\\CS2060-Class-Code-main\\examples\\ByrdAustinHW04.c\"",
-    "file": "C:\\GitHubRepo\\CSC2060Code\\Csc2060ClassCode\\CS2060-Class-Code-main\\examples\\ByrdAustinHW04.c"
+    "command": "\"C:\\Windows\\system32\\CL.exe\" \/c \/ZI \/JMC \/nologo \/W3 \/WX- \/diagnostics:column \/Od \/D _CRT_SECURE_NO_WARNINGS \/EHsc \/RTC1 \/MDd \/GS \/fp:precise \/permissive- \/Fo\"x64\\Debug\\\\\" \/Gd \/TC   \"C:\\GitHubRepo\\CHello\\CHelloWorld\\CHelloWorld\\ByrdAustinGE05.c\"",
+    "file": "C:\\GitHubRepo\\CHello\\CHelloWorld\\CHelloWorld\\ByrdAustinGE05.c"
   }
 ]

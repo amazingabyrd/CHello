@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\CSC2060Code\Csc2060ClassCode\CS2060-Class-Code-main\examples\ByrdAustinHW04.c">
+    <ClCompile Include="ByrdAustinGE05.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

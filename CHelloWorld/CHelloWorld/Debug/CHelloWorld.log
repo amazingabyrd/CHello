@@ -1,0 +1,10 @@
+﻿  Race.c
+C:\GitHubRepo\CSC2060Code\Csc2060ClassCode\CS2060-Class-Code-main\examples\Race.c(146,26): warning C4047: 'function': 'char *' differs in levels of indirection from 'char **'
+C:\GitHubRepo\CSC2060Code\Csc2060ClassCode\CS2060-Class-Code-main\examples\Race.c(146,21): warning C4024: 'fgetsRemoveNewLine': different types for formal and actual parameter 1
+C:\GitHubRepo\CSC2060Code\Csc2060ClassCode\CS2060-Class-Code-main\examples\Race.c(147,38): warning C4047: 'function': 'const char *' differs in levels of indirection from 'double **'
+C:\GitHubRepo\CSC2060Code\Csc2060ClassCode\CS2060-Class-Code-main\examples\Race.c(147,29): warning C4024: 'getValidDouble': different types for formal and actual parameter 1
+C:\GitHubRepo\CSC2060Code\Csc2060ClassCode\CS2060-Class-Code-main\examples\Race.c(148,30): warning C4047: 'function': 'const char *' differs in levels of indirection from 'double **'
+C:\GitHubRepo\CSC2060Code\Csc2060ClassCode\CS2060-Class-Code-main\examples\Race.c(148,25): warning C4024: 'getValidDouble': different types for formal and actual parameter 1
+C:\GitHubRepo\CSC2060Code\Csc2060ClassCode\CS2060-Class-Code-main\examples\Race.c(175,20): warning C4018: '<': signed/unsigned mismatch
+C:\GitHubRepo\CSC2060Code\Csc2060ClassCode\CS2060-Class-Code-main\examples\Race.c(177,22): warning C4047: '==': 'char *' differs in levels of indirection from 'int'
+C:\GitHubRepo\CSC2060Code\Csc2060ClassCode\CS2060-Class-Code-main\examples\Race.c(179,8): error C2106: '=': left operand must be l-value
