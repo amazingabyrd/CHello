@@ -1,188 +1,172 @@
 warning: argument unused during compilation: '/ZI' [clang-diagnostic-unused-command-line-argument]
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:121:24: warning: incompatible pointer types assigning to 'ListNode *' from 'struct listNode *' [clang-diagnostic-incompatible-pointer-types]
-            currentPtr = currentPtr->nextPtr;
-                       ^ ~~~~~~~~~~~~~~~~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:126:33: warning: incompatible pointer types assigning to 'struct listNode *' from 'ListNodePtr' (aka 'ListNode *') [clang-diagnostic-incompatible-pointer-types]
-                newPtr->nextPtr = list;
-                                ^ ~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:131:38: warning: incompatible pointer types assigning to 'struct listNode *' from 'ListNode *' [clang-diagnostic-incompatible-pointer-types]
-                previousPtr->nextPtr = newPtr;
-                                     ^ ~~~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:132:33: warning: incompatible pointer types assigning to 'struct listNode *' from 'ListNode *' [clang-diagnostic-incompatible-pointer-types]
-                newPtr->nextPtr = currentPtr;
-                                ^ ~~~~~~~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:135:34: warning: incompatible pointer to integer conversion assigning to 'char' from 'char[80]' [clang-diagnostic-int-conversion]
-        *(currentPtr)->data.name = currentPetName; // place value in node
-                                 ^ ~~~~~~~~~~~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:150:17: warning: unused variable 'currentPtr' [clang-diagnostic-unused-variable]
-    ListNodePtr currentPtr = list;
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:191:3: warning: Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119 [clang-analyzer-security.insecureAPI.strcpy]
+                strcpy(tempRider.riderName, name);
+                ^~~~~~
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:191:3: note: Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119
+                strcpy(tempRider.riderName, name);
+                ^~~~~~
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:269:3: warning: Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119 [clang-analyzer-security.insecureAPI.strcpy]
+                strcpy(tempPayment, payment);
+                ^~~~~~
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:269:3: note: Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119
+                strcpy(tempPayment, payment);
+                ^~~~~~
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:305:2: warning: Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119 [clang-analyzer-security.insecureAPI.strcpy]
+        strcpy(r->payment, payment);
+        ^~~~~~
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:305:2: note: Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119
+        strcpy(r->payment, payment);
+        ^~~~~~
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:382:19: warning: Array access results in an undefined pointer dereference [clang-analyzer-core.NullDereference]
+                        if (entered == arr[i][1])
+                                       ^
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:102:6: note: 'verifyPassword' is equal to 1
+        if (verifyPassword == 1)
+            ^~~~~~~~~~~~~~
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:102:2: note: Taking true branch
+        if (verifyPassword == 1)
+        ^
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:113:3: note: Calling 'riderSetup'
+                riderSetup(&orghPtr, &ridhPtr);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:154:7: note: 'error' is <= 1
+                if (error > 1)
+                    ^~~~~
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:154:3: note: Taking false branch
+                if (error > 1)
                 ^
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:155:9: warning: Value stored to 'list' is never read [clang-analyzer-deadcode.DeadStores]
-        list = list->nextPtr;
-        ^      ~~~~~~~~~~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:155:9: note: Value stored to 'list' is never read
-        list = list->nextPtr;
-        ^      ~~~~~~~~~~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:155:14: warning: incompatible pointer types assigning to 'ListNodePtr' (aka 'ListNode *') from 'struct listNode *' [clang-diagnostic-incompatible-pointer-types]
-        list = list->nextPtr;
-             ^ ~~~~~~~~~~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:161:21: warning: incompatible pointer types initializing 'ListNodePtr' (aka 'ListNode *') with an expression of type 'struct listNode *' [clang-diagnostic-incompatible-pointer-types]
-        ListNodePtr currentPtr = list->nextPtr;
-                    ^            ~~~~~~~~~~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:167:24: warning: incompatible pointer types assigning to 'ListNodePtr' (aka 'ListNode *') from 'struct listNode *' [clang-diagnostic-incompatible-pointer-types]
-            currentPtr = currentPtr->nextPtr; 
-                       ^ ~~~~~~~~~~~~~~~~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:195:9: warning: 4th function call argument is an uninitialized value [clang-analyzer-core.CallAndMessage]
-        fprintf(fptr, "%s\t%d", list->data.name, list->data.age);
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:169:19: note: Assuming 'i' is >= 'strsize'
+                for (int i = 0; i < strsize; i++)
+                                ^~~~~~~~~~~
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:169:3: note: Loop condition is false. Execution continues on line 174
+                for (int i = 0; i < strsize; i++)
+                ^
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:176:7: note: Assuming 'strcompare' is equal to 0
+                if (strcompare == 0)
+                    ^~~~~~~~~~~~~~~
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:176:3: note: Taking true branch
+                if (strcompare == 0)
+                ^
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:180:8: note: 'q' is not equal to 0
+                        if (q == 0)
+                            ^
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:180:4: note: Taking false branch
+                        if (q == 0)
+                        ^
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:184:8: note: 'q' is equal to 1
+                        if (q == 1)
+                            ^
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:184:4: note: Taking true branch
+                        if (q == 1)
+                        ^
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:201:9: note: Calling 'charCheck'
+                rec = charCheck(CHOICE, YN);
+                      ^~~~~~~~~~~~~~~~~~~~~
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:372:7: note: 'loop' is <= 0
+                if (loop > 0)
+                    ^~~~
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:372:3: note: Taking false branch
+                if (loop > 0)
+                ^
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:378:10: note: Assuming the condition is false
+                while (getchar() != '\n');
+                       ^~~~~~~~~~~~~~~~~
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:378:3: note: Loop condition is false. Execution continues on line 379
+                while (getchar() != '\n');
+                ^
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:380:3: note: Loop condition is true.  Entering loop body
+                for (int i = 0; i <= size; i++)
+                ^
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:382:8: note: Assuming the condition is false
+                        if (entered == arr[i][1])
+                            ^~~~~~~~~~~~~~~~~~~~
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:382:4: note: Taking false branch
+                        if (entered == arr[i][1])
+                        ^
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:380:3: note: Loop condition is true.  Entering loop body
+                for (int i = 0; i <= size; i++)
+                ^
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:382:8: note: Assuming the condition is false
+                        if (entered == arr[i][1])
+                            ^~~~~~~~~~~~~~~~~~~~
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:382:4: note: Taking false branch
+                        if (entered == arr[i][1])
+                        ^
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:380:30: note: The value 2 is assigned to 'i'
+                for (int i = 0; i <= size; i++)
+                                           ^~~
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:380:3: note: Loop condition is true.  Entering loop body
+                for (int i = 0; i <= size; i++)
+                ^
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:382:19: note: Array access results in an undefined pointer dereference
+                        if (entered == arr[i][1])
+                                       ^~~~~~~~~
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:467:33: warning: The left operand of '==' is a garbage value [clang-analyzer-core.UndefinedBinaryOperatorResult]
+        if (*(str + (positionPtr - 1)) == '\n')
+                                       ^
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:102:6: note: 'verifyPassword' is equal to 1
+        if (verifyPassword == 1)
+            ^~~~~~~~~~~~~~
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:102:2: note: Taking true branch
+        if (verifyPassword == 1)
         ^
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:48:16: note: Assuming the condition is false
-        while (getchar() != '\n');
-               ^~~~~~~~~~~~~~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:48:9: note: Loop condition is false. Execution continues on line 49
-        while (getchar() != '\n');
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:113:3: note: Calling 'riderSetup'
+                riderSetup(&orghPtr, &ridhPtr);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:154:7: note: 'error' is <= 1
+                if (error > 1)
+                    ^~~~~
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:154:3: note: Taking false branch
+                if (error > 1)
+                ^
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:169:19: note: Assuming 'i' is >= 'strsize'
+                for (int i = 0; i < strsize; i++)
+                                ^~~~~~~~~~~
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:169:3: note: Loop condition is false. Execution continues on line 174
+                for (int i = 0; i < strsize; i++)
+                ^
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:176:7: note: Assuming 'strcompare' is not equal to 0
+                if (strcompare == 0)
+                    ^~~~~~~~~~~~~~~
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:176:3: note: Taking false branch
+                if (strcompare == 0)
+                ^
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:196:13: note: Calling 'orgChoice'
+                ochoice = orgChoice(o);
+                          ^~~~~~~~~~~~
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:568:6: note: 'orgHead' is not equal to NULL
+        if (orgHead != NULL)
+            ^~~~~~~
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:568:2: note: Taking true branch
+        if (orgHead != NULL)
         ^
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:49:13: note: Assuming the condition is true
-        if (answer == 'y')
-            ^~~~~~~~~~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:49:9: note: Taking true branch
-        if (answer == 'y')
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:573:3: note: Loop condition is false. Execution continues on line 579
+                while (currentPtr != NULL)
+                ^
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:580:2: note: Calling 'fgetsRemoveNewLine'
+        fgetsRemoveNewLine(orgChoice);
+        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:467:33: note: The left operand of '==' is a garbage value
+        if (*(str + (positionPtr - 1)) == '\n')
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~ ^
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:489:3: warning: Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119 [clang-analyzer-security.insecureAPI.strcpy]
+                strcpy(newOrganization->organizationName, inputStr);
+                ^~~~~~
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:489:3: note: Call to function 'strcpy' is insecure as it does not provide bounding of the memory buffer. Replace unbounded copy functions with analogous functions that support length arguments such as 'strlcpy'. CWE-119
+                strcpy(newOrganization->organizationName, inputStr);
+                ^~~~~~
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:537:3: warning: Potential leak of memory pointed to by 'newNodePtr' [clang-analyzer-unix.Malloc]
+                RIDERS* previousPtr = NULL;
+                ^
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:532:23: note: Memory is allocated
+        RIDERS* newNodePtr = malloc(sizeof(RIDERS));
+                             ^~~~~~~~~~~~~~~~~~~~~~
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:533:6: note: Assuming 'newNodePtr' is not equal to NULL
+        if (newNodePtr != NULL)
+            ^~~~~~~~~~~~~~~~~~
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:533:2: note: Taking true branch
+        if (newNodePtr != NULL)
         ^
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:51:13: note: Calling 'insertPets'
-            insertPets(startPtr);
-            ^~~~~~~~~~~~~~~~~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:113:9: note: Assuming 'currentPtr' is equal to NULL
-    if (currentPtr != NULL)
-        ^~~~~~~~~~~~~~~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:113:5: note: Taking false branch
-    if (currentPtr != NULL)
-    ^
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:141:1: note: Returning without writing to 'list->data.age'
-}
-^
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:51:13: note: Returning from 'insertPets'
-            insertPets(startPtr);
-            ^~~~~~~~~~~~~~~~~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:44:5: note: Loop condition is true. Execution continues on line 46
-    do
-    ^
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:48:16: note: Assuming the condition is false
-        while (getchar() != '\n');
-               ^~~~~~~~~~~~~~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:48:9: note: Loop condition is false. Execution continues on line 49
-        while (getchar() != '\n');
-        ^
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:49:13: note: Assuming the condition is false
-        if (answer == 'y')
-            ^~~~~~~~~~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:49:9: note: Taking false branch
-        if (answer == 'y')
-        ^
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:53:19: note: Left side of '&&' is true
-        else if  (answer != 'y' && answer != 'n')
-                  ^
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:53:36: note: Assuming the condition is false
-        else if  (answer != 'y' && answer != 'n')
-                                   ^~~~~~~~~~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:53:14: note: Taking false branch
-        else if  (answer != 'y' && answer != 'n')
-             ^
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:44:5: note: Loop condition is false.  Exiting loop
-    do
-    ^
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:64:5: note: Calling 'fileWrite'
-    fileWrite("file.txt", 'w', startPtr);
-    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:186:5: note: Taking false branch
-    if (isEmpty(&(list->data)))
-    ^
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:193:5: note: Loop condition is true.  Entering loop body
-    while (currentPtr != NULL)
-    ^
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:195:9: note: 4th function call argument is an uninitialized value
-        fprintf(fptr, "%s\t%d", list->data.name, list->data.age);
-        ^                                        ~~~~~~~~~~~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:196:20: warning: incompatible pointer types assigning to 'ListNode *' from 'struct listNode *' [clang-diagnostic-incompatible-pointer-types]
-        currentPtr = list->nextPtr;
-                   ^ ~~~~~~~~~~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:207:20: warning: incompatible pointer types assigning to 'ListNodePtr' (aka 'ListNode *') from 'struct listNode *' [clang-diagnostic-incompatible-pointer-types]
-        currentPtr = currentPtr->nextPtr;
-                   ^ ~~~~~~~~~~~~~~~~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:217:9: warning: 1st function call argument is an uninitialized value [clang-analyzer-core.CallAndMessage]
-    if (tolower(name1[0]) > tolower(name2[0]))
-        ^
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:48:16: note: Assuming the condition is false
-        while (getchar() != '\n');
-               ^~~~~~~~~~~~~~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:48:9: note: Loop condition is false. Execution continues on line 49
-        while (getchar() != '\n');
-        ^
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:49:13: note: Assuming the condition is true
-        if (answer == 'y')
-            ^~~~~~~~~~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:49:9: note: Taking true branch
-        if (answer == 'y')
-        ^
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:51:13: note: Calling 'insertPets'
-            insertPets(startPtr);
-            ^~~~~~~~~~~~~~~~~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:111:24: note: Storing uninitialized value
-    ListNode* newPtr = malloc(sizeof(ListNode)); // create node
-                       ^~~~~~~~~~~~~~~~~~~~~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:113:9: note: Assuming 'currentPtr' is not equal to NULL
-    if (currentPtr != NULL)
-        ^~~~~~~~~~~~~~~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:113:5: note: Taking true branch
-    if (currentPtr != NULL)
-    ^
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:118:16: note: 'currentPtr' is not equal to NULL
-        while (currentPtr != NULL && strcmp1(newPtr->data.name, currentPtr->data.name))
-               ^~~~~~~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:118:16: note: Left side of '&&' is true
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:118:38: note: Calling 'strcmp1'
-        while (currentPtr != NULL && strcmp1(newPtr->data.name, currentPtr->data.name))
-                                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:217:9: note: 1st function call argument is an uninitialized value
-    if (tolower(name1[0]) > tolower(name2[0]))
-        ^       ~~~~~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:226:15: warning: initializing 'ListNode *' with an expression of type 'const ListNode *const' discards qualifiers [clang-diagnostic-incompatible-pointer-types-discards-qualifiers]
-    ListNode *currentPtr = list;
-              ^            ~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:235:32: warning: The left operand of '!=' is a garbage value [clang-analyzer-core.UndefinedBinaryOperatorResult]
-    while (currentPtr->nextPtr != NULL)
-                               ^
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:48:16: note: Assuming the condition is false
-        while (getchar() != '\n');
-               ^~~~~~~~~~~~~~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:48:9: note: Loop condition is false. Execution continues on line 49
-        while (getchar() != '\n');
-        ^
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:49:13: note: Assuming the condition is false
-        if (answer == 'y')
-            ^~~~~~~~~~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:49:9: note: Taking false branch
-        if (answer == 'y')
-        ^
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:53:19: note: Left side of '&&' is true
-        else if  (answer != 'y' && answer != 'n')
-                  ^
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:53:36: note: Assuming the condition is false
-        else if  (answer != 'y' && answer != 'n')
-                                   ^~~~~~~~~~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:53:14: note: Taking false branch
-        else if  (answer != 'y' && answer != 'n')
-             ^
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:44:5: note: Loop condition is false.  Exiting loop
-    do
-    ^
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:61:5: note: Calling 'display'
-    display(startPtr);
-    ^~~~~~~~~~~~~~~~~
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:228:5: note: Taking false branch
-    if (isEmpty(&(list->data)))
-    ^
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:235:32: note: The left operand of '!=' is a garbage value
-    while (currentPtr->nextPtr != NULL)
-           ~~~~~~~~~~~~~~~~~~~ ^
-C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\ByrdAustinGE05.c:238:19: warning: incompatible pointer types assigning to 'ListNode *' from 'struct listNode *const' [clang-diagnostic-incompatible-pointer-types]
-       currentPtr = (list->nextPtr);
-                  ^ ~~~~~~~~~~~~~~~
+C:\GitHubRepo\CHello\CHelloWorld\CHelloWorld\AustinByrdIteration2.c:537:3: note: Potential leak of memory pointed to by 'newNodePtr'
+                RIDERS* previousPtr = NULL;
+                ^
